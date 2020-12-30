@@ -10,17 +10,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          SCRIPT-8 v2
-        </h1>
+        <h1 className={styles.title}>SCRIPT-8 v2</h1>
 
         <p>
-          This is the SCRIPT-8 rewrite. Follow along at <a href="https://github.com/script-8/script-8-nextjs">script-8-nextjs</a>.
-
+          This is the SCRIPT-8 rewrite. Follow along at{' '}
+          <a href="https://github.com/script-8/script-8-nextjs">
+            script-8-nextjs
+          </a>
+          .
         </p>
-
       </main>
-
     </div>
   )
 }
