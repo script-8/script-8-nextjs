@@ -1,6 +1,13 @@
+import { useState } from 'react'
 import Head from 'next/head'
 
 export default function Home() {
+  const [code, setCode] = useState('')
+
+  const onTextAreaChange = event => {
+    setCode(event.target.value)
+  }
+
   return (
     <div>
       <Head>
@@ -18,6 +25,10 @@ export default function Home() {
           </a>
           .
         </p>
+        <h2>Input</h2>
+        <textarea value={code} onChange={onTextAreaChange}></textarea>
+        <h3>Output</h3>
+        <div>{code}</div>
       </main>
     </div>
   )
